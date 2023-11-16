@@ -20,6 +20,12 @@
 	font-family: Calibri;
 	color:#25384a;
 
+	h3.title {
+	text-align:center;
+	font-family: Calibri;
+	font-size: 30px;
+	}
+
 	}
 	body {
  	background-image: url('Blueskybackgroundw3.png');
@@ -35,11 +41,12 @@
 	<h1><b>ENG0018 Computer Laboratory</b></h1>
 	<h2>Student URN:6750184</h2>
 	<hr>
-	<h2><b>"Conference paper: Aerospike engines: theory and application in modern space flight." </b></h2>
+	<h3 class="title"><b>"Conference paper: Aerospike engines: theory and application in modern space flight." </b></h3>
 	<hr>
   </head>
-	<!table styling>
+
 <style>
+	
 	table.contents {
 	margin-left: auto;
 	margin-right: auto;
@@ -64,6 +71,7 @@
 	
 </style>
 	<table class="contents">
+		
 	<tr>
 	 <th><h3>Table of contents </h3></th>	
 	</tr>
@@ -99,40 +107,53 @@
 	text-align: justify;
   	text-justify: inter-word;
 	}
+	
 	p.ref {
 	margin: 1% 20%;
 	word-wrap:break-word;
 	text-decoration:none;
 	}
+	
 	body {
 	width: 100%; 
   	height: 100%; 
 	}
+	
 	hp  {
 	float: right;    
 	margin: 0 0 0 15px;
 	}
+	
 </style>
+
 <hr>
-	<h3 id="abstract">Abstract</h3>
+
+<h3 id="abstract">Abstract</h3>
+	
 <p class="ex1">
 	
 This paper will go over the theory behind Aerospike engines, a type of altitude-compensating rocket motor designed to maintain efficiency over a wider range of altitudes than dynamically a traditional engine. We will cover how air pressure affects traditional engine nozzles and what methods we use to compensate for it. How Aerospikes use air pressure to guide the size of their theoretical engine bell. Both earlier and modern tests of Aerospike design as well as their limitations in practical use. Such designs still hold weight in modern spacecraft considerations and may be an important step in the development of multi-use  planetary landers, such as a potential Mars mission. This paper intends to provide a brief understanding of how the physics of these engines works and why, for the most part, there has been a lacklustre attempt to adopt these engines into any current spacecraft designs.
 
- </p>
+</p>
+	
 <hr>
-	<h3 id="rocketnozzle">How Rocket Nozzles function</h3>
+	
+<h3 id="rocketnozzle">How Rocket Nozzles function</h3>
+
 <p class="ex1">
 
 As rocket fuel ignites, the momentum of the gas particles is initially exerted in all directions, with only a tiny percentage moving directly down away from the engine, creating thrust. (Dieter K. Huzel & David H. Huang) A thrust chamber fixes this by confining the expanding gas, stopping the outwards expansion. The gas is then forced into the nozzle through a throat, compressing the gas. The nozzle's shape slowly diverges, causing the compressed gas to expand and ‘choke’, creating a supersonic jet dramatically accelerating the gas away from the engine. (Dieter K. Huzel & David H. Huang) At Higher ambient pressures, however, the surrounding air affects exhaust, compressing the Plume, reducing its momentum. If the Nozzle is not adjusted the gas will over expand, reducing ISP. (Erin M. Betts and Dr. Robert A. Frederick, Jr) ISP or Specific impulse is the thrust of an engine over the rate of fuel it consumes. Simplified, it’s how long an engine would burn if one unit of fuel in weight were used to continuously produce one unit of thrust. A higher ISP means that the engine can use the fuel more efficiently to generate thrust for a longer time. (V.K. Bhat, A.R. Kulkarni and Haridwar Singh) The Engine nozzle shape must account for atmospheric compression to ensure maximum ISP. (Erin M. Betts and Dr. Robert A. Frederick, Jr) Issues arise as the rocket travels through the atmosphere. Ambient pressure is dependent on altitude. So as the rocket rises the ambient pressure on the exhaust plume decreases, causing the exhaust to under-expand As such, most rocket nozzles are designed to operate at a specific ambient pressure depending on their shape. (Dieter K. Huzel and David H. Huang)
- </p>
+</p>
+	
 <hr>
-	<h3 id="aerospike">Aerospike Design</h3>
+	
+<h3 id="aerospike">Aerospike Design</h3>
+	
 <p class="ex1">
 
 Aerospike engines intend to solve this issue. Rather than forcing exhaust through into an engine nozzle or bell, an aerospike directs the gas along the edge of a curved surface. This curve follows the traditional rocket nozzle shape. The ambient air pressure then acts against the outflow or exhaust, stopping expansion outwards; this creates a barrier where the super-sonic exhaust can no longer push standing air out of the way, referred to as the free jet boundary. (J. J. Korte) A second curved surface is placed against the first, forming the wedge or ‘Spike’ from which the design gets its name., constricting the exhaust. As the atmospheric pressure decreases, the force against the exhaust also decreases, expanding the virtual nozzle's size. This nozzle expansion with altitude means an aerospike can maintain peak efficiency throughout its flight. (J. J. Korte)
 
- </p>
+</p>
 
 <hr>
 
@@ -165,37 +186,8 @@ Following the failure of the VentureStar project and the increasing popularity o
 </p>
 
 <hr>
-	
- </body>
-	<h3 id="Analysis And Discussion">Analysis and discussion</h3>
-	<table>
-		<tr>
-	 	 <th>£ cost of repairs</th>
-		 <th>Lifespan of repairs</th>	
-		</tr>
-		<tr>
-		 <td>0.7 m</td>
-		 <td>2</td>
-		</tr>
-		<tr>
-		 <td>3.3m</td>	
-		 <td>4</td>
-		</tr>
-		<tr>
-		 <td>2.6 m</td>
-		 <td>5</td>
-		</tr>
-		<tr>
-		 <td>17.4 m</td>
-		 <td>7</td>
-		</tr>
-		<tr>
-   		 <td>8.8 m</td>
-		 <td>9</td>	
-		
-		</tr>
-	</table>
-        <h3 id="References">References</h3>
+
+<h3 id="References">References</h3>
 	
 <p class="ref"><a style="text-decoration:none" href="Progress of the X-33.pdf" target="_blank">Allen Li, “Progress of the X-33 Reusable Launch Vehicle Program” GAO/T-NSIAD-99-243 pages 3-5</p>
 		
@@ -214,7 +206,6 @@ Following the failure of the VentureStar project and the increasing popularity o
 <p class="ref"><a style="text-decoration:none" href="https://web.archive.org/web/20111217103436/http://www.pwrengineering.com/articles/nozzledesign.htm" target="_blank">R.A. O'Leary and J. E. Beck “Pratt & Whitney Rocketdyne's engineering journal of power technology"</p>
 				
 <p class="ref"><a style="text-decoration:none" href="Rapid Estimation of Specific Impulse.pdf" target="_blank">V.K. Bhat, A.R. Kulkarni and Haridwar Singh, “Rapid Estimation of Specific Impulse” Pune-411 021   62-67 </p>
-<br>
-<br>
-	
+
+</body>
 </html>
