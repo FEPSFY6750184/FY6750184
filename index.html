@@ -207,6 +207,44 @@ Following the failure of the VentureStar project and the increasing popularity o
 				
 <p class="ref"><a style="text-decoration:none" href="Rapid Estimation of Specific Impulse.pdf" target="_blank">V.K. Bhat, A.R. Kulkarni and Haridwar Singh, “Rapid Estimation of Specific Impulse” Pune-411 021   62-67 January 1988</p>
 <hr>
+<script>
+var slideImages = ["Slide 1.jpg", "Slide 2.jpg", "Slide 3.jpg", "Slide 4.jpg", "Slide 5.jpg"];
+var currentSlide = 0;
+
+function showSlide() {
+	document.getEmementById('Slide').src = slideImages[currentSlide]
+}
+function nextSlide() {
+	currentSlide = (currentSlide + 1) % slideImages.length;
+	showSlide();
+}
+
+function prevSlide() {
+	currentSlide = (currentSlide -1 + slideImages.length) % slideImages.length;
+	showSlide();
+}
+
+function showSlideNumber(slideNumber) {
+	currentSlide = SlideNumber - 1;
+	showSlide();
+}
+	showSlide( );	
+</script>
+
+<div id="slide-container">
+	<img id="slide" src="slide 1.jpg" alt="Slide 1" style="width:100%; max-width:800px;">
+</div>
+<div class="button-container">
+	<button class="button" onclick="prevSlide()">Previous</button>
+	<button class="button" onclick="nextSlide()">Next</button>
+</div>
+<div class="slide-number-container">
+	<button class="button" onclick="showSlideNumber"(1)">1</button>
+	<button class="button" onclick="showSlideNumber"(2)">2</button>
+	<button class="button" onclick="showSlideNumber"(3)">3</button>
+	<button class="button" onclick="showSlideNumber"(4)">4</button>
+	<button class="button" onclick="showSlideNumber"(5)">5</button>
+</div>
 <style>
 #slide-container {
 	text-align: center;
@@ -238,43 +276,5 @@ Following the failure of the VentureStar project and the increasing popularity o
 	margin-bottom: -50px
 }	
 </style>
-<script>
-var slideImages = ["Slide 1.png", "Slide 2.png", "Slide 3.png", "Slide 4.png", "Slide 5.png"];
-var currentSlide = 0;
-
-function showSlide() {
-	document.getEmementById('Slide').src = slideImages[currentSlide]
-}
-function nextSlide() {
-	currentSlide = (currentSlide + 1) % slideImages.length;
-	showSlide();
-}
-
-function prevSlide() {
-	currentSlide = (currentSlide -1 + slideImages.length) % slideImages.length;
-	showSlide();
-}
-
-function showSlideNumber(slideNumber) {
-	currentSlide = SlideNumber - 1;
-	showSlide();
-}
-	showSlide( );	
-</script>
-
-<div id="slide-container">
-	<img id="slide" src="slide 1.png" alt="Slide 1" style="width:100%; max-width:800px;">
-</div>
-<div class="button-container">
-	<button class="button" onclick="prevSlide()">Previous</button>
-	<button class="button" onclick="nextSlide()">Next</button>
-</div>
-<div class="slide-number-container">
-	<button class="button" onclick="showSlideNumber"(1)">1</button>
-	<button class="button" onclick="showSlideNumber"(2)">2</button>
-	<button class="button" onclick="showSlideNumber"(3)">3</button>
-	<button class="button" onclick="showSlideNumber"(4)">4</button>
-	<button class="button" onclick="showSlideNumber"(5)">5</button>
-</div>
 </body>
 </html>
