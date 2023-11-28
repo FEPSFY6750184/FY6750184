@@ -212,7 +212,7 @@ var slideImages = ["Slide 1.jpg", "Slide 2.jpg", "Slide 3.jpg", "Slide 4.jpg", "
 var currentSlide = 0;
 
 function showSlide() {
-	document.getEmementById('Slide').src = slideImages[currentSlide];
+	document.getEmementById('slide').src = slideImages[currentSlide];
 }
 function nextSlide() {
 	currentSlide = (currentSlide + 1) % slideImages.length;
@@ -225,10 +225,10 @@ function prevSlide() {
 }
 
 function showSlideNumber(slideNumber) {
-	currentSlide = SlideNumber - 1;
+	currentSlide = slideNumber - 1;
 	showSlide();
 }
-	showSlide( );	
+	showSlide();	
 </script>
 
 <div id="slide-container">
